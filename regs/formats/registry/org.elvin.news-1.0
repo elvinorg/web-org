@@ -1,0 +1,94 @@
+org.tickertape.news
+1.0
+
+
+http://elvin.dstc.edu.au/projects/tickertape/
+elvin@dstc.edu.au
+Tickertape news notifications provide a one-way flow of information from external sources to the Tickertape user.
+%%
+ELVIN_CLASS
+string
+M
+The type of message e.g. "NEWSWATCHER".
+%%
+ELVIN_SUBCLASS
+string
+M
+The message subclass is used to further
+identify the news source, e.g. CNN or
+ABC.
+%%
+FROM_EMAIL
+string
+M
+The e-mail address of the author of the
+article.
+%%
+NEWSGROUPS
+string
+M
+The name of the source of the article
+(e.g. cnn.com.weather).
+%%
+X-NNTP-Host
+string
+M
+The news host from which the article
+originated.
+%%
+KEYWORDS
+string
+O
+Keywords describing the subject of the
+article.
+%%
+SUBJECT
+string
+O
+The subject heading or title of the news
+article.
+%%
+BODY
+string
+O
+The text of the news event.
+%%
+FROM_NAME
+string
+O
+The name of the author of the article.
+%%
+Message-Id
+string
+O
+A unique message identifier. You can use
+the articles URL or generate one of your
+own.
+%%
+time
+string
+O
+The time that the article arrived.
+%%
+MIME_TYPE
+string
+O
+The MIME (see the helpers file) type
+e.g. x-elvin/url.
+%%
+MIME_ARGS
+string
+O
+The object reference e.g.
+http://elvin.dstc.edu.au/.
+%%
+MIME_ENCODING
+string
+O
+The encoding method used on MIME_ARGS.
+If not present, no encoding has been
+used (this is the default, and means
+that MIME_ARGS cannot contain NUL
+characters). Examples are base64,
+quoted-printable, etc.
+%%

@@ -1,0 +1,21 @@
+com.dstc.coffeebiff.biff
+2.0
+
+
+http://www.dstc.edu.au/Research/Projects/Elvin/apps/coffeebiff/
+elvin@dstc.edu.au
+When the user indicates that she is going to have coffee, coffeebiff
+should send a biff notification indicating the user's name and the
+number of minutes that they intend to be sipping caffeine.
+%%
+CoffeeBiff
+string
+M
+User name (should be unique across the federated Coffeebiff domain).
+%%
+TIMEOUT
+int32
+M
+The default length of a break in minutes, as specified by the
+Coffeebiff user, which normally defaults to 10.
+%%

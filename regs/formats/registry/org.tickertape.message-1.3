@@ -1,0 +1,66 @@
+org.tickertape.message
+1.3
+1.2
+2.0
+http://elvin.dstc.edu.au/apps/tickertape/
+elvin@dstc.edu.au
+Tickertape messages provide the user-to-user chat interaction
+component of Tickertape.
+%%
+TICKERTAPE
+string
+M
+The name of the "channel" to which the message should be delivered.
+%%
+TICKERTEXT
+string
+M
+The content of the message.  A text string.
+%%
+USER
+string
+M
+The string name of the sender of the message.
+%%
+TIMEOUT
+int32
+M
+Default lifetime of the message, in minutes.
+%%
+MIME_TYPE
+string
+O
+The string MIME type of the attachment.  If this field is present, the
+MIME_ARGS field must also be supplied.
+%%
+MIME_ARGS
+string
+O
+The body of the MIME attachment. If this field is present, the
+MIME_TYPE field must also be supplied.
+%%
+MIME_ENCODING
+string
+O
+The string encoding tag describing the encoding format of the MIME
+body.  This field is optional, and defaults to "8bit".
+%%
+REPLACEMENT
+string
+O
+A string identifier for the message.  Subsequent messages with the
+same identifier replace the preceding message in the scroller, if it
+is still present.  This is designed for information which is
+constantly updated, such a sports scores, temperature readings, etc.
+%%
+Message-Id
+string
+M
+An identifier for the message.  Should be globally unique.  We suggest
+a DCE UUID (or Microsoft GUID).
+%%
+In-Reply-To
+string
+O
+Identifier for the message to which this is a response.
+%%

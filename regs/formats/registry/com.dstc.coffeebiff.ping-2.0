@@ -1,0 +1,24 @@
+com.dstc.coffeebiff.ping
+2.0
+
+
+http://www.dstc.edu.au/Research/Projects/Elvin/apps/coffeebiff/
+elvin@dstc.edu.au
+Coffeebiff sends a notification on startup to gather the current,
+distributed, state of coffee drinking.  This notification triggers a
+response from each receiving Coffeebiff using format
+com.dstc.coffeebiff.pong-2.0 and these update the local (and all
+other) Coffeebiff's knowledge of the distributed state.
+%%
+CoffeeBiff
+string
+M
+User name (should be unique across the federated Coffeebiff domain).
+%%
+PING
+int32
+M
+The value of this field is ignored.  It is traditionally set to the default
+length of a break, as specified by the Coffeebiff user.  This defaults
+to 10 (minutes).
+%%

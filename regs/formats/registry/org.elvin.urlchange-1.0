@@ -1,0 +1,18 @@
+org.elvin.httpdmon
+1.0
+
+
+http://elvin.dstc.com/projects/producers/webactivity.htmi
+elvin@dstc.com
+Indicates a change to the data addressable by an URL.
+%%
+URL
+string
+M
+The URL of the data that has changed.
+%%
+What
+string
+M
+A string indicating what happened to the data at the URL (values in use are "updated", "added", and "removed").
+%%

@@ -1,0 +1,28 @@
+org.elvin.weather.poll
+1.0
+
+
+
+d@pobox.com
+An authorised poll request will cause the generation of a report, the
+same as if a significant change had been observed.
+
+Note that it is only possible to poll a station via it's identifier,
+and not by its geography.  This is an attempt to prevent stations
+being overwhelmed by poll requests from careless clients.
+%%
+org.elvin.weather.poll
+int32
+M
+Major version
+%%
+minor
+int32
+M
+Minor version
+%%
+id
+string
+M
+Unique station identifier
+%%

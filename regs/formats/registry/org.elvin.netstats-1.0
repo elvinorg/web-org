@@ -1,0 +1,41 @@
+org.elvin.netstats
+1.0
+
+
+http://www.dstc.edu.au/elvin/apps/gnetstats
+j@pobox.com
+Describes the number of bytes sent and recived on a particular
+interface over a set time interval
+%%
+org.elvin.netstats
+int32
+M
+Major version
+%%
+minor
+int32
+M
+Minor version
+%%
+interface
+string
+M
+name of the interface, eg ppp0, eth1
+%%
+interval
+int32
+M
+sampling interval for the data, in seconds
+%%
+send
+int32
+M
+number of bytes sent during the sampling interval
+%%
+recv
+int32
+M
+number of bytes recieved during the sampling interval
+%%
+
+

@@ -1,0 +1,11 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+org_home_item(`elvin.biz',`
+
+<a href="http://elvin.dstc.com">elvin.biz</a> provides a full range of
+Elvin implementations for most popular operating systems and
+programming languages.')
+
+org_footer()

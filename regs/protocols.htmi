@@ -1,0 +1,66 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+<tr>
+<td>
+
+Elvin uses a modular protocol stack, with each module being identified
+by a unique, short textual name.  These names MUST start with an `x-'
+prefix unless registered with this registry.<p>
+
+Implementors seeking registration of protocols should contact
+ORG_REGISTRY_MAILTO to coordinate specification (in case there are
+multiple overlapping proposals), and ultimately submit the
+specification for registration and publication.<p>
+
+<table width="100%" border="1">
+<tr>
+<th>Name</th>
+<th>Specification</th>
+<th>Description</th>
+<tr>
+
+<tr>
+  <td>ssl</td>
+  <td><a href="">draft-elvin-ssl-00.txt</a></td>
+  <td>SSLv3 transport protocol</td>
+</tr>
+
+<tr>
+  <td>tcp</td>
+  <td><a href="">draft-elvin-tcp-00.txt</a></td>
+  <td>Mandatory TCP-based transport protocol</td>
+</tr>
+
+<tr>
+  <td>udp</td>
+  <td><a href="">draft-elvin-udp-00.txt</a></td>
+  <td>UDP-based transport protocol</td>
+</tr>
+
+<tr>
+  <td>unix</td>
+  <td><a href="">draft-elvin-unix-00.txt</a></td>
+  <td>Unix domain socket transport protocol</td>
+</tr>
+
+<tr>
+  <td>xdr</td>
+  <td><a href="">draft-elvin-xdr-00.txt</a></td>
+  <td>Mandatory XDR marshalling protocol</td>
+</tr>
+
+<tr>
+  <td>xml</td>
+  <td><a href="">draft-elvin-xml-00.txt</a></td>
+  <td>XML marshalling protocol</td>
+</tr>
+
+</table>
+
+
+</td>
+</tr>
+
+org_footer()

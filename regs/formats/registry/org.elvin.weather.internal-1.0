@@ -1,0 +1,95 @@
+org.elvin.weather.internal
+1.0
+
+
+
+d@pobox.com
+
+Stations inside a building are of most use to those who use the
+building, as they reflect the climate control of the building more
+than the prevailing weather conditions. For this reason, the location
+field should be particularly descriptive for internal reports.
+
+One use of the internal reporting format is for feedback in climate
+control systems. In order to support this, the location, floor and
+room attributes should be carefully specified.
+%%
+org.elvin.weather.internal
+int32
+M
+Major version
+%%
+minor
+int32
+M
+Minor version
+%%
+time
+int64
+M
+Seconds since 00:00, 1 Jan 1970, UTC
+%%
+id
+string
+M
+Unique station identifier
+%%
+name
+string
+O
+User-friendly name of the station, normally including th name of the
+owner or operator of the equipment.
+%%
+location
+string
+O
+User-friendly location of the station, normally including the street
+address, building name, company name, and other useful information.
+%%
+tag
+string
+O
+Sensor identification information.  Typically used for climate control
+systems to identify the sensor.  Only unique within the building.
+%%
+floor
+string
+O
+Name or number of the floor on which the station is located.
+%%
+room
+string
+O
+Name or number of the room in which the station is located.
+%%
+maintainer
+string
+O
+Email address of the station's maintainer. In RFC-822 format (ie. NOT
+a mailto: URL)
+%%
+longitude
+float
+M
+in degrees, where negative is west
+%%
+latitude
+float
+M
+in degrees, where negative is south
+%%
+altitude
+float
+M
+in metres, above sea-level
+%%
+temperature
+float
+O
+in degrees Kelvin/Celcius
+%%
+humidity
+float
+O
+a percentage
+%%

@@ -1,0 +1,29 @@
+org.tickertape.message
+1.0
+
+1.1
+http://elvin.dstc.edu.au/apps/tickertape/
+elvin@dstc.edu.au
+Tickertape messages provide the user-to-user chat interaction
+component of Tickertape.
+%%
+TICKERTAPE
+string
+M
+The name of the "channel" to which the message should be delivered.
+%%
+TICKERTEXT
+string
+M
+The content of the message.  A text string.
+%%
+USER
+string
+M
+The string name of the sender of the message.
+%%
+TIMEOUT
+int32
+M
+Default lifetime of the message, in minutes.
+%%

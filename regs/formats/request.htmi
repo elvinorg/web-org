@@ -1,0 +1,105 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+org_home_para(`
+  This form is the preferred way to register a notification format.
+  It allows definition of the messages used by an application, and
+  specification of the format owner and relevant web documentation.
+  <p>
+
+  &nbsp;<p>
+
+  <form method="post" action="/cgi-bin/formats/freg.py">
+  <input type="hidden" name="mode" value="initial">
+  <input type="hidden" name="referer" value="/regs/index.html">
+
+  <table border="0" cellpadding="4" bgcolor="#dddddd">
+    <tr>
+      <th align="left" valign="top"><br>Name</th>
+      <td colspan="4">
+        <input type="text" name="f_name" size="42"><br>
+
+        <font size="-1">
+        Unique identifying name for this notification format.  Should
+        use a reversed DNS domain name as a prefix, so the name is
+        something like <tt>com.startup.killer-app</tt>.
+        </font>
+      </td>
+    </tr>
+
+    <tr>
+      <th align="left" valign="center">Version</th>
+      <td align="left" valign="center">Major</td>
+      <td align="left"><input type="text" name="f_major" size="3"></td>
+      <td align="left" valign="center">Minor</td>
+      <td><input type="text" name="f_minor" size="3"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2" valign="top">
+	<font size="-1">
+	Integer major version number.  For a named format, the major
+	version should only be incremented when a change is made to
+	the format which is <b>not backward compatible</b>.
+	</font>
+      </td>
+      <td colspan="2" valign="top">
+	<font size="-1">
+	Integer minor version number.  For a named format, the minor
+	version should be incremented for each <b>addition</b> made to
+	the format, ie. extra fields are defined. Where the names or
+	types of attributes are changed, the major version should be
+	incremented.
+	</font>
+      </td>
+	  
+    </tr>
+    </tr>
+      <th valign="top"><br>Summary</th>
+      <td colspan="4">
+        <textarea name="f_summary" rows="5" cols="40"></textarea><br>
+        <font size="-1">
+          Short description of the purpose of this message type and
+          its role in the owning application.
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <th align="left" valign="top"><br>URL</th>
+      <td colspan="4">
+        <input type="text" name="f_url" size="42"><br>
+        <font size="-1">
+          URL for web page describing the application that produces
+          messages of this format.  This should allow programmers
+          browsing the format registry to find out more about your
+          application.
+        </font>
+      </td>
+    </tr>
+
+    <tr>
+      <th align="left" valign="top"><br>Email</th>
+      <td colspan="4">
+        <input type="text" name="f_mail" size="42"><br>
+        <font size="-1">
+          Email address for the owner of the format.  This address is
+          used as a contact point for the format author.
+        </font>
+        <p>&nbsp;<p>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+
+  <table border="0" cellpadding="4" bgcolor="white">
+    <tr>
+      <td align="center"><input name="action" type="submit" value="Define"></td>
+      <td align="center"><input name="action" type="submit" value="Cancel"></td>
+    </tr>
+  </table>
+  </form>
+')
+
+org_footer()

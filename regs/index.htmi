@@ -1,0 +1,39 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+org_home_item(`Notification<br>formats',`Applications that use Elvin must
+structure their communicated messages into lists of names and
+typed-values.<p>
+
+Implementors might choose to publish the notification formats used by
+their applications to 
+
+<ul>
+<li>preserve a unique namespace, preventing accidental collisions with
+    other applications,
+<li>document their interfaces to promote interoperability with other
+    Elvin applications
+<li>develop common formats for vertical markets or other interest
+    groups served by multiple vendors/applications
+</ul>
+<p>
+
+Facilities are provided to <a
+href="/cgi-bin/formats/fbrowse.py">browse</a> currently registered
+formats, update an existing format specification, or <a
+href="formats/request.html">register</a> a new format.')
+
+org_home_item(`Protocols',`Inter-process communication in Elvin uses a
+modular protocol stack, with each module being identified by a short,
+unique, textual name.  The protocol specifications and their allocated
+names are published via the <a href="protocols.html">protocol</a>
+registry.')
+
+org_home_item(`Schemes',`The Elvin client protocol supports an
+extensible security model, in which the format and use of keys is
+determined by a scheme identifier within the KeyBlock.  Scheme
+definitions and their allocated identifiers are published via the <a
+href="schemes.html">scheme</a> registry.')
+
+org_footer()

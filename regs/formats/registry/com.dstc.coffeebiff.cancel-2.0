@@ -1,0 +1,21 @@
+com.dstc.coffeebiff.biff
+2.0
+
+
+http://www.dstc.edu.au/Research/Projects/Elvin/apps/coffeebiff/
+elvin@dstc.edu.au
+If the user should indicate to coffeebiff, after plainly stating that
+she is going to consume coffee, that she is, in fact, not going to
+drink coffee after all, her coffeebiff should indicate this by
+emitting a cancel notification.
+%%
+CoffeeBiff
+string
+M
+User name (should be unique across the federated Coffeebiff domain).
+%%
+CANCEL
+int32
+M
+The value of this field is ignored and ususally set to zero.
+%%

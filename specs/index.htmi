@@ -1,0 +1,65 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+<tr>
+<td>
+
+The Elvin protocol suite consists of multiple, semi-independent
+protocols.  Each protocol unit is specified using the <a
+href="http://www.ietf.org">IETF</a>'s <a
+href="http://www.ietf.org/ID.html">Internet-Draft</a> format and
+language, under the rules specified in <a
+href="http://www.ietf.org/rfc/rfc2026.txt">RFC-2026</a>.  It is our
+intention to publish these specifications as Informational RFCs once
+they reach a suitable maturity.
+<p>
+
+Researchers and implementors are invited to contribute to these
+specifications, via the discussion <a href="../lists.html">list</a>.
+If there is sufficient interest, a suitable working group will be
+chartered, probably within the IETF.  <p>
+
+<table width="100%" border="1">
+<tr>
+<th>Specification</th>
+<th>Description</th>
+<tr>
+
+<tr>
+  <td><a href="">draft-elvin-uri-prelim-01.txt</a></td>
+  <td><tt>elvin:</tt> URL scheme</td>
+</tr>
+
+<tr>
+  <td><a href="">draft-elvin-discovery-prelim-00.txt</a></td>
+  <td>Router Discovery</td>
+</tr>
+
+<tr>
+  <td><a href="">draft-elvin-client-prelim-01.txt</a></td>
+  <td>Client</td>
+</tr>
+
+<tr>
+  <td><a href="">draft-elvin-cluster-prelim-01.txt</a></td>
+  <td>Cluster</td>
+</tr>
+
+<tr>
+  <td><a href="">draft-elvin-federation-prelim-01.txt</a></td>
+  <td>Federation</td>
+</tr>
+
+<tr>
+  <td><a href="">draft-elvin-rlm-prelim-01.txt</a></td>
+  <td>Reliable Local-area Multicast</td>
+</tr>
+
+</table>
+
+
+</td>
+</tr>
+
+org_footer()

@@ -1,0 +1,106 @@
+org.elvin.weather.control
+1.0
+
+
+
+d@pobox.com
+Control messages configure the station's sending of reports. For each
+observed attribute, the magnitude which is considered significant can
+be set.  Additionally, minimum and maximum times between reports can
+be configured which override the individual significance setting.
+
+Control messages can be applied to stations selected by identifier
+(which restricts you to a single station), or by specifying ranges of
+latitude, longitude and altitude. With the use of the Elvin 4 security
+mechanism, only authorised control messages will be accepted.
+%%
+org.elvin.weather.control
+int32
+M
+Major version
+%%
+minor
+int32
+M
+Minor version
+%%
+type
+string
+O
+type of station this message applies to, one of surface, or internal
+%%
+id
+string
+O
+Unique station identifier
+%%
+longitude.min
+float
+O
+in degrees, where negative is west
+%%
+longitude.max
+float
+O
+in degrees, where negative is west
+%%
+latitude.min
+float
+O
+in degrees, where negative is south
+%%
+latitude.max
+float
+O
+in degrees, where negative is south
+%%
+altitude.min
+float
+O
+in metres, above sea-level
+%%
+altitude.max
+float
+O
+in metres, above sea-level
+%%
+minimum
+int32
+O
+minimum period between reports, in seconds
+%%
+maximum
+int32
+O
+maximum period between reports, in seconds
+%%
+temperature
+float
+O
+change required to trigger a report, in degrees Kelvin/Celcius
+%%
+humidity
+float
+O
+change required to trigger a report, in percentage
+%%
+pressure
+float
+O
+change required to trigger a report, in hectopascals
+%%
+wind.direction
+float
+O
+change required to trigger a report, in degrees
+%%
+wind.speed
+float
+O
+change required to trigger a report, in metres per second
+%%
+rainfall
+float
+O
+change required to trigger a report, in mm
+%%

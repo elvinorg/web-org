@@ -1,0 +1,72 @@
+dnl -*- m4 -*-
+include(org.m4)
+org_header()
+
+<tr>
+<td>
+
+The Elvin client protocol supports an extensible security model, where
+the format and use of keys is determined by a scheme identifier within
+the KeyBlock.<p>
+
+Implementors seeking registration of key schemes should contact
+ORG_REGISTRY_MAILTO to coordinate specification (in case there are
+multiple overlapping proposals), and ultimately submit the
+specification for registration and publication.<p>
+
+<table width="100%" border="1">
+<tr>
+<th>Identifier</th>
+<th>Specification</th>
+<th>Description</th>
+<tr>
+
+<tr>
+  <td>0</td>
+  <td>&nbsp;</td>
+  <td><i>reserved</i></td>
+</tr>
+
+<tr>
+  <td>1</td>
+  <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
+  <td>SHA.1 Dual scheme</td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
+  <td>SHA.1 Producer</td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
+  <td>SHA.1 Consumer</td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td><a href="">draft-elvin-md5keys-00.txt</a></td>
+  <td>SHA.1 Dual scheme</td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td><a href="">draft-elvin-md5keys-00.txt</a></td>
+  <td>SHA.1 Producer</td>
+</tr>
+
+<tr>
+  <td>6</td>
+  <td><a href="">draft-elvin-md5keys-00.txt</a></td>
+  <td>SHA.1 Consumer</td>
+</tr>
+
+</table>
+
+
+</td>
+</tr>
+
+org_footer()

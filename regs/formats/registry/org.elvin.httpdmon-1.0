@@ -1,0 +1,69 @@
+org.elvin.httpdmon
+1.0
+
+
+http://www.dstc.edu.au/Elvin/apps/httpdmon/
+d@pobox.com
+Describes a "hit" on a web server.  Reflects the W3C's
+Common Log File format, from which it is derived.
+%%
+ELVIN_CLASS
+string
+M
+must have the value "HTTPD Monitor"
+%%
+ELVIN_SUBCLASS
+string
+M
+must have the value "access_log"
+%%
+server
+string
+M
+DNS host name of the web server machine
+%%
+client
+string
+M
+DNS host name or dotted quad IP address
+of the requesting client machine
+%%
+date
+int32
+M
+date/time of the hit, in seconds since
+0:00, 01 Jan 1970 UTC (ie. a Unix
+timestamp)
+%%
+command
+string
+M
+HTTP command.  Examples are GET, POST,
+HEAD, etc.
+%%
+path
+string
+M
+Path of the document specified in the
+command.
+%%
+version
+string
+M
+HTTP version.  Normally, one of 0.9, 1.0
+or 1.1 (at time of writing).
+%%
+result
+int32
+M
+HTTP result code.  Examples are 200,
+404, etc.
+%%
+size
+int32
+M
+Number of bytes returned by the server
+in response to this request.
+%%
+
+

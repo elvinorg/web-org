@@ -1,0 +1,98 @@
+org.tickertape.message
+2.0
+1.3
+
+http://elvin.dstc.edu.au/apps/tickertape/
+elvin@dstc.edu.au
+Tickertape messages provide the user-to-user chat interaction
+component of Tickertape.
+%%
+org.tickertape.message
+int32
+M
+Major protocol version.  Must have a value of "2" for this specification.
+%%
+minor
+int32
+M
+Minor protocol version.  Must have a value of "0" for this specification.
+%%
+group
+string
+M
+The name of the destination group. Must use a fully-qualified name. 
+
+An alternative would be to use Usenet-style names: dstc.chat.hq, but
+again, these should be based on domain names to guarantee uniqueness.
+%%
+message
+string
+M
+The text body of the message.
+%%
+id
+string
+M
+The unique identifier for the sender. This may be either the user's
+(canonical) email address or an anonymous string (we suggest a string
+representation of a UUID, although this does reveal the Ethernet
+address of the sending machine).
+%%
+name
+string
+O
+A user-friendly name for the sender. If this field is not provided,
+the program should use the full value of the id field.
+%%
+message-id
+string
+M
+Unique identifier for this message.  Any value will do, and it's not
+strictly necessary that it be globally unique for all time.  We should
+probably set some guidelines here ...
+%%
+in-reply-ro
+string
+O
+Identifier of message for which this is a reply.
+%%
+followups-to
+string
+O
+Name of group to which replies should be directed, if not the group of
+the current message.  Used to redirect conversations, typically out of
+a public forum.
+Note that this relies on client's having an ability to dynamically
+adjust their subscription to follow such conversations.
+%%
+replace
+string
+O
+Identifier of a replaceable message.  Clients should check their
+display for another message with this identifier, and if present,
+replace it with the current message.
+
+Used to continuously update a message without filling the display.
+%%
+mime-type
+string
+O
+MIME type of the attachment content.
+%%
+attachment
+opaque
+O
+Byte string containing the content of an attachment.  No encoding is
+required for the content, and producers should be careful to remove
+any encoding from attachments received from other sources (ie. BASE64
+encoded email).
+
+if no mime-type field is present, this field should be ignored.
+%%
+lifetime
+int32
+O
+Default lifetime of the message, in minutes.  Clients should remove
+the message from their display after this duration (unless locally
+overridden).
+%%

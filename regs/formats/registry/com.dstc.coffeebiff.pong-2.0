@@ -1,0 +1,23 @@
+com.dstc.coffeebiff.pong
+2.0
+
+
+http://www.dstc.edu.au/Research/Projects/Elvin/apps/coffeebiff
+elvin@dstc.edu.au
+This format is the response from a Coffeebiff receiving a
+com.dstc.coffeebiff.ping-2.0.  It reports the current state of the
+Coffeebiff instance, if it is currently "active".
+%%
+CoffeeBiff
+string
+M
+User name (should be unique across the federated Coffeebiff domain).
+%%
+PONG
+int32
+M
+The number of minutes remaining in the coffee break.  So if the time
+specified by the user is 10 (minutes) (the default), then as this time
+passes, the value returned reflects the time remaining until the
+coffee break is "over".
+%%

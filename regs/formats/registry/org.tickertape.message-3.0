@@ -1,0 +1,125 @@
+org.tickertape.message
+3.0
+2.0
+
+http://elvin.dstc.edu.au/apps/tickertape/
+elvin@dstc.edu.au
+Tickertape messages provide the user-to-user chat interaction
+component of Tickertape.
+%%
+org.tickertape.message
+int32
+M
+Major protocol version.  Must have a value of "3" for this specification.
+%%
+minor
+int32
+M
+Minor protocol version.  Must have a value of "0" for this specification.
+%%
+to
+string
+M
+The name of the destination group. Must use a fully-qualified name. 
+
+An alternative would be to use Usenet-style names: dstc.chat.hq, but
+again, these should be based on domain names to guarantee uniqueness.
+
+Note that this field has been renamed from previous versions (was
+TICKERTAPE).
+%%
+message
+string
+M
+The text body of the message.
+
+Note that this field has been renamed from previous versions (was
+TICKERTAPE).
+%%
+from
+string
+M
+The unique identifier for the sender. This may be either the user's
+(canonical) email address or an anonymous string (provided it is
+guaranteed to be unique).
+%%
+name
+string
+O
+A user-friendly name for the sender. If this field is not provided,
+client programs should present the full value of the from field.
+
+The intention of this field is to support more nicknames, without fear
+of collision with the real from name.  Client applications should
+present a nickname if one is provided.
+%%
+message-id
+string
+M
+Unique identifier for this message.  Any value will do, and it's not
+strictly necessary that it be globally unique for all time.  We should
+probably set some guidelines here ...
+%%
+in-reply-ro
+string
+O
+Identifier of message for which this is a reply.
+%%
+reply-to
+string
+O
+Name of group to which replies should be directed, if not the group of
+the current message.  Used to redirect conversations, typically out of
+a public forum.
+Note that this relies on clients having an ability to dynamically
+adjust their subscription to follow such conversations.
+%%
+replace
+string
+O
+Identifier of a replaceable message.  Clients should check their
+display for another message with this identifier, and if present,
+replace it with the current message.
+
+Note that both the name and semantics of this field have changed.  The
+value should be the message-id of the message to be replaced.  Unlike
+the previous scheme, this enables replacement of arbitrary messages.
+%%
+mime-version
+string
+O
+The MIME specification requires that a version number be provided.
+This value should be set to "1.0" for this specification.
+%%
+content-type
+string
+O
+MIME type of the attachment content.
+%%
+content-transfer-encoding
+string
+O
+MIME encoding of the attachment content.
+%%
+content-disposition
+string
+O
+MIME disposition of the attachment content.
+%%
+attachment
+opaque
+O
+Byte string containing the content of an attachment.  No encoding is
+required for the content, and producers should be careful to remove
+any encoding from attachments received from other sources (ie. BASE64
+encoded email).
+
+if no content-type field is present, this field should be ignored.
+%%
+lifetime
+int32
+O
+Default lifetime of the message, in minutes.  Clients should remove
+the message from their display after this duration (unless locally
+overridden).
+%%

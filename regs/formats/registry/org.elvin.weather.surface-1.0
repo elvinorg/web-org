@@ -1,0 +1,106 @@
+org.elvin.weather.surface
+1.0
+
+
+
+d@pobox.com
+
+The most common type of station is one that reports the surface-level
+atmospheric conditions -- a traditional, white box, weather
+station. These reports may contain a range of observations, but must
+contain at least one of the following set.
+%%
+org.elvin.weather.surface
+int32
+M
+Major version
+%%
+minor
+int32
+M
+Minor version
+%%
+time
+int64
+M
+Seconds since 00:00, 1 Jan 1970, UTC
+%%
+id
+string
+M
+Unique station identifier
+%%
+name
+string
+O
+User-friendly name of the station, normally including th name of the
+owner or operator of the equipment.
+%%
+location
+string
+O
+User-friendly location of the station, normally including the suburb,
+city and country, and other useful information.
+%%
+maintainer
+string
+O
+Email address of the station's maintainer. In RFC-822 format (ie. NOT
+a mailto: URL)
+%%
+longitude
+float
+M
+in degrees, where negative is west
+%%
+latitude
+float
+M
+in degrees, where negative is south
+%%
+altitude
+float
+M
+in metres, above sea-level
+%%
+temperature
+float
+O
+in degrees Kelvin/Celcius
+%%
+humidity
+float
+O
+a percentage
+%%
+barometric.pressure
+float
+O
+in hectopascals
+%%
+barometric.tendency
+string
+O
+one of "rising", "steady" or "falling"
+%%
+wind.direction
+float
+O
+in degrees (north is 0)
+%%
+wind.speed
+float
+O
+in metres per second
+%%
+rainfall
+float
+O
+in mm, in the preceding 24 hour period
+%%
+observations
+string
+O
+Any number of keywords from the following set: "fine", "cloudy",
+"overcast", "storms", "rain", separated by spaces.
+%%

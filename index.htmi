@@ -1,0 +1,32 @@
+dnl -*- m4 -*-
+include(org.m4)
+
+org_header()
+
+org_home_para(`Elvin is a system for content-based notification
+routing.')
+
+org_home_item(`Specifications',`The Elvin protocol <a
+href="specs/index.html">specifications</a> are in the form of an IETF
+Internet-Draft.  Various independent aspects of the protocol suite are
+independently specified.')
+
+org_home_item(`Registries',`Applications that use Elvin may choose to
+register their notification formats to promote interoperability.<p>
+
+In addition, several of the Elvin protocols require fields whose
+values are defined externally to the protocol specification itself, to
+allow for extension.<p>
+
+Both of these roles are catered for by a <a
+href="regs/index.html">registry</a> of allocated values and a public
+specification of their meaning.')
+
+org_home_item(`Implementations',`Links to Elvin <a
+href="impl.html">implementations</a>, arranged by operating system and
+programming language.')
+
+org_home_item(`Mailing lists',`Mailing <a href="lists.html">lists</a>
+for the maintenance and revision of the Elvin specifications.')
+
+org_footer()
