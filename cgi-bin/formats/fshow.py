@@ -1,12 +1,12 @@
-#! /usr/bin/python2.0
+#! /usr/bin/python2.2
 ########################################################################
 #
 #              elvin.org web
 #              notification format registry
 #
 # File:        $Source: /Users/d/work/elvin/CVS/web-org/cgi-bin/formats/fshow.py,v $
-# Version:     $RCSfile: fshow.py,v $ $Revision: 1.1 $
-# Copyright:   (C) 1998-2002 elvin.org
+# Version:     $RCSfile: fshow.py,v $ $Revision: 1.2 $
+# Copyright:   (C) 1998-2003 elvin.org
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -36,7 +36,8 @@ ORG_SERVER = "http://www.elvin.org"
 ORG_ROOT = ""
 ORG_CGI_HOME = "http://www.elvin.org/cgi-bin"
 ORG_CGI_FORMAT_ROOT = "/formats"
-ORG_REGISTRY = "/u1/www/www.elvin.org/regs/formats/registry"
+ORG_REGISTRY = "/data/www/www.elvin.org/docs/regs/formats/registry"
+#ORG_REGISTRY = "/home/d/work/web/web-org/regs/formats/registry"
 
 ########################################################################
 
@@ -49,7 +50,7 @@ web_header = '''Content-type: text/html
 Elvin-check: ok
 
 
-<!-- Copyright (C) elvin.org 1998-2002 -->
+<!-- Copyright (C) elvin.org 1998-2003 -->
 
 <html>
   <head>
@@ -81,9 +82,9 @@ web_trailer = '''
       <tr bgcolor="#888888">
         <td colspan="2">
           <font color="white" size="-2" face="helvetica,arial">
-            Copyright &copy; 2002&nbsp;&nbsp;&nbsp; 
+            Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
             <a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-             Last updated: $Date: 2002/03/29 07:35:14 $
+             Last updated: $Date: 2003/11/07 12:47:26 $
           </font>
         </td>
       </tr>

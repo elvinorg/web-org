@@ -1,12 +1,12 @@
-#! /usr/bin/python2.0
+#! /usr/bin/python2.2
 ########################################################################
 #
 #              Elvin Web
 #              notification format registry
 #
 # File:        $Source: /Users/d/work/elvin/CVS/web-org/cgi-bin/formats/fbrowse.py,v $
-# Version:     $RCSfile: fbrowse.py,v $ $Revision: 1.1 $
-# Copyright:   (C) 1998-2002 elvin.org
+# Version:     $RCSfile: fbrowse.py,v $ $Revision: 1.2 $
+# Copyright:   (C) 1998-2003 elvin.org
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -39,7 +39,8 @@ ORG_SERVER = "http://www.elvin.org"
 ORG_ROOT = ""
 ORG_CGI_HOME = "http://www.elvin.org/cgi-bin"
 ORG_CGI_FORMAT_ROOT = "/formats"
-ORG_REGISTRY = "/u1/www/www.elvin.org/regs/formats/registry"
+#ORG_REGISTRY = "/data/www/www.elvin.org/docs/regs/formats/registry"
+ORG_REGISTRY = "/home/d/work/web/web-org/regs/formats/registry"
 
 
 ########################################################################
@@ -53,7 +54,7 @@ web_header = '''Content-type: text/html
 Elvin-check: ok
 
 
-<!-- Copyright (C) elvin.org 1998-2002 -->
+<!-- Copyright (C) elvin.org 1998-2003 -->
 
 <html>
   <head>
@@ -105,9 +106,9 @@ web_trailer = '''
       <tr bgcolor="#888888">
         <td colspan="2">
           <font color="white" size="-2" face="helvetica,arial">
-            Copyright &copy; 2002&nbsp;&nbsp;&nbsp; 
+            Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
             <a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-             Last updated: $Date: 2002/03/29 07:35:15 $
+             Last updated: $Date: 2003/11/07 12:47:26 $
           </font>
         </td>
       </tr>
@@ -164,6 +165,8 @@ if __name__ == '__main__':
         res += '<tr><th>Format</th><th>Version</th></tr>'
         
         for f_name in f_list:
+            if f_name in ["Makefile", "CVS", ".", ".."]:
+                continue
             ver_idx = f_name.rfind(".")
             name_idx = f_name.rfind("-")
 
