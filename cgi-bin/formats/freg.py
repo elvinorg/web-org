@@ -1,12 +1,12 @@
-#! /usr/bin/python2.0
+#! /opt/local/bin/python2.0
 ########################################################################
 #
 #              elvin.org web
 #              notification format registry
 #
 # File:        $Source: /Users/d/work/elvin/CVS/web-org/cgi-bin/formats/freg.py,v $
-# Version:     $RCSfile: freg.py,v $ $Revision: 1.1 $
-# Copyright:   (C) 1998-2002 elvin.org
+# Version:     $RCSfile: freg.py,v $ $Revision: 1.2 $
+# Copyright:   (C) 1998-2003 elvin.org
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -33,9 +33,9 @@
 ORG_HOME      = "http://www.elvin.org"
 ORG_FREG_PY   = ORG_HOME + "/cgi-bin/formats/freg.py"
 ORG_MAIL      = "mailto:webmaster@elvin.org"
-ORG_COPYRIGHT = "1998-2002 elvin.org"
-ORG_MAILHOST  = "mailhost.dstc.edu.au"
-ORG_WEB_OWNER = "elvin@dstc.edu.au"
+ORG_COPYRIGHT = "1998-2003 elvin.org"
+ORG_MAILHOST  = "localhost"
+ORG_WEB_OWNER = "webmaster@elvin.org"
 ORG_FREG_USER = "davida@pobox.com"
 
 
@@ -49,7 +49,7 @@ import base64, cgi, os, pickle, sys, getopt, random, smtplib, socket, string, ti
 web_head = '''Content-type: text/html
 
 
-<!-- Copyright (C) elvin.org 1998-2002 -->
+<!-- Copyright (C) elvin.org 1998-2003 -->
 
 <html>
   <head>
@@ -203,9 +203,9 @@ web_trailer = '''
       <tr bgcolor="#888888">
         <td colspan="2">
           <font color="white" size="-2" face="helvetica,arial">
-            Copyright &copy; 2002&nbsp;&nbsp;&nbsp; 
+            Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
             <a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-             Last updated: $Date: 2002/03/29 07:35:12 $
+             Last updated: $Date: 2003/11/07 13:16:13 $
           </font>
         </td>
       </tr>
