@@ -2,10 +2,10 @@ dnl -*- m4 -*-
 include(org.m4)
 org_header()
 
-org_home_item(`elvin.biz',`
+org_home_item(`Mantara Software',`
 
-<a href="http://elvin.dstc.com">elvin.biz</a> provides a full range of
-Elvin implementations for most popular operating systems and
+<a href="http://www.mantara.com">Mantara Software</a> provides a full
+range of Elvin implementations for most popular operating systems and
 programming languages.')
 
 org_footer()
