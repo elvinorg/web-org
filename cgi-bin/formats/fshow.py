@@ -1,11 +1,11 @@
-#! /usr/bin/python2.2
+#! /opt/local/bin/python2.2
 ########################################################################
 #
 #              elvin.org web
 #              notification format registry
 #
 # File:        $Source: /Users/d/work/elvin/CVS/web-org/cgi-bin/formats/fshow.py,v $
-# Version:     $RCSfile: fshow.py,v $ $Revision: 1.2 $
+# Version:     $RCSfile: fshow.py,v $ $Revision: 1.3 $
 # Copyright:   (C) 1998-2003 elvin.org
 #
 # This program is free software; you can redistribute it and/or modify
@@ -84,7 +84,7 @@ web_trailer = '''
           <font color="white" size="-2" face="helvetica,arial">
             Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
             <a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-             Last updated: $Date: 2003/11/07 12:47:26 $
+             Last updated: $Date: 2003/11/07 13:12:27 $
           </font>
         </td>
       </tr>

@@ -1,11 +1,11 @@
-#! /usr/bin/python2.2
+#! /opt/local/bin/python2.2
 ########################################################################
 #
 #              Elvin Web
 #              notification format registry
 #
 # File:        $Source: /Users/d/work/elvin/CVS/web-org/cgi-bin/formats/fbrowse.py,v $
-# Version:     $RCSfile: fbrowse.py,v $ $Revision: 1.2 $
+# Version:     $RCSfile: fbrowse.py,v $ $Revision: 1.3 $
 # Copyright:   (C) 1998-2003 elvin.org
 #
 # This program is free software; you can redistribute it and/or modify
@@ -39,8 +39,8 @@ ORG_SERVER = "http://www.elvin.org"
 ORG_ROOT = ""
 ORG_CGI_HOME = "http://www.elvin.org/cgi-bin"
 ORG_CGI_FORMAT_ROOT = "/formats"
-#ORG_REGISTRY = "/data/www/www.elvin.org/docs/regs/formats/registry"
-ORG_REGISTRY = "/home/d/work/web/web-org/regs/formats/registry"
+ORG_REGISTRY = "/data/www/www.elvin.org/docs/regs/formats/registry"
+#ORG_REGISTRY = "/home/d/work/web/web-org/regs/formats/registry"
 
 
 ########################################################################
@@ -48,7 +48,7 @@ ORG_REGISTRY = "/home/d/work/web/web-org/regs/formats/registry"
 import base64, cgi, os, pickle, sys, getopt, random, string, time, traceback, urllib
 
 
-########################################################################
+#####################################################################
 
 web_header = '''Content-type: text/html
 Elvin-check: ok
@@ -108,7 +108,7 @@ web_trailer = '''
           <font color="white" size="-2" face="helvetica,arial">
             Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
             <a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-             Last updated: $Date: 2003/11/07 12:47:26 $
+             Last updated: $Date: 2003/11/07 13:12:27 $
           </font>
         </td>
       </tr>
@@ -188,7 +188,7 @@ if __name__ == '__main__':
 	pass
 
     except:
-	print web_header % ("Error", "error")
+	print web_header % ("Error",)
 	print "<pre>"
         print "We had an exception ...\n"
         traceback.print_exc()
