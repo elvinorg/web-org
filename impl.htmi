@@ -8,4 +8,9 @@ org_home_item(`Mantara Software',`
 range of Elvin implementations for most popular operating systems and
 programming languages.')
 
+org_home_item(`tickertape.org',`
+<a href="http://www.tickertape.org">tickertape.org</a> is a community
+site that hosts development of the Tickertape protocol and
+applications which use Elvin as their network transport.')
+
 org_footer()
