@@ -2,22 +2,17 @@ org.tickertape.message
 3.0
 2.0
 
-http://elvin.dstc.edu.au/apps/tickertape/
-elvin@dstc.edu.au
+http://www.tickertape.org
+ticker-dev@tickertape.org
 Tickertape messages provide the user-to-user chat interaction
 component of Tickertape.
 %%
 org.tickertape.message
 int32
 M
-Major protocol version.  Must have a value of "3" for this specification.
+Protocol version.  Must have a value of 3000 for this specification.
 %%
-minor
-int32
-M
-Minor protocol version.  Must have a value of "0" for this specification.
-%%
-to
+Group
 string
 M
 The name of the destination group. Must use a fully-qualified name. 
@@ -28,7 +23,7 @@ again, these should be based on domain names to guarantee uniqueness.
 Note that this field has been renamed from previous versions (was
 TICKERTAPE).
 %%
-message
+Message
 string
 M
 The text body of the message.
@@ -36,7 +31,7 @@ The text body of the message.
 Note that this field has been renamed from previous versions (was
 TICKERTAPE).
 %%
-from
+From
 string
 M
 The unique identifier for the sender. This may be either the user's
@@ -53,73 +48,72 @@ The intention of this field is to support more nicknames, without fear
 of collision with the real from name.  Client applications should
 present a nickname if one is provided.
 %%
-message-id
+Message-Id
 string
 M
 Unique identifier for this message.  Any value will do, and it's not
 strictly necessary that it be globally unique for all time.  We should
 probably set some guidelines here ...
 %%
-in-reply-ro
+In-Reply-To
 string
 O
 Identifier of message for which this is a reply.
 %%
-reply-to
+Thread-Id
 string
 O
-Name of group to which replies should be directed, if not the group of
-the current message.  Used to redirect conversations, typically out of
-a public forum.
-Note that this relies on clients having an ability to dynamically
-adjust their subscription to follow such conversations.
+When sending a message to a group to which the sender is not
+subscribed but wishes to see any replies, this field should be set
+(and the sender's user agent should alter its subscription so as to
+receive any messages with this Thread-Id value).
+
+This value must be globally unique.  See Message-Id for
+recommendations.
 %%
-replace
+Replaces
 string
 O
 Identifier of a replaceable message.  Clients should check their
-display for another message with this identifier, and if present,
-replace it with the current message.
+display for another message with the same value for this field, and if
+present, replace it with the current message.
+%%
+Attachment
+string
+O
+Byte string containing the content of an attachment.  The content must
+be a legitimate UTF-8 string, which will require 7bit encoding for
+binary data.
 
-Note that both the name and semantics of this field have changed.  The
-value should be the message-id of the message to be replaced.  Unlike
-the previous scheme, this enables replacement of arbitrary messages.
+The MIME versions, content type, transfer encoding, etc, are all
+included within this string, as per the MIME standards.
 %%
-mime-version
-string
-O
-The MIME specification requires that a version number be provided.
-This value should be set to "1.0" for this specification.
-%%
-content-type
-string
-O
-MIME type of the attachment content.
-%%
-content-transfer-encoding
-string
-O
-MIME encoding of the attachment content.
-%%
-content-disposition
-string
-O
-MIME disposition of the attachment content.
-%%
-attachment
-opaque
-O
-Byte string containing the content of an attachment.  No encoding is
-required for the content, and producers should be careful to remove
-any encoding from attachments received from other sources (ie. BASE64
-encoded email).
-
-if no content-type field is present, this field should be ignored.
-%%
-lifetime
+Timeout
 int32
 O
 Default lifetime of the message, in minutes.  Clients should remove
 the message from their display after this duration (unless locally
 overridden).
+%%
+User-Agent
+string
+O
+Name and version information for the user agent (program) generating
+this message.
+%%
+No-Archive
+int32
+O
+The sender of a message can request that it not be archived by setting
+this attribute with a non-zero value.
+%%
+Distribution
+string
+O
+A value, intended for interpretation by forwarding filters at
+administrative boundaries, describing restrictions on the distribution
+of this message.
+
+No constraints are set on the value of this field, except that it
+SHOULD have a string value.
 %%
