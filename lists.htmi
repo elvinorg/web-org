@@ -6,13 +6,17 @@ org_home_item(`elvin-announce',`A low-volume, moderated list for
 announcement of new specifications, registrations and implementations
 related to the Elvin protocol suite.<p>
 
-Links: <a href="">archives</a>, <a href="">subscribe</a>, <a href="">unsubscribe</a>
+Links: <a href="/pipermail/elvin-announce/">archives</a>, 
+<a href="/mailman/listinfo/elvin-announce">subscribe</a>, 
+<a href="/mailman/listinfo/elvin-announce">unsubscribe</a>
 ')
 
 org_home_item(`elvin-discuss',`An un-moderated list for general
 discussion of Elvin specifications and related issues.<p>
 
-Links: <a href="">archives</a>, <a href="">subscribe</a>, <a href="">unsubscribe</a>
+Links: <a href="/pipermail/elvin-announce/">archives</a>, 
+<a href="/mailman/listinfo/elvin-discuss>subscribe</a>, 
+<a href="/mailman/listinfo/elvin-discuss>unsubscribe</a>
 ')
 
 org_footer()
