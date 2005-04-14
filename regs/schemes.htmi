@@ -48,19 +48,19 @@ specification for registration and publication.<p>
 <tr>
   <td>4</td>
   <td><a href="">draft-elvin-md5keys-00.txt</a></td>
-  <td>SHA.1 Dual scheme</td>
+  <td>MD5 Dual scheme</td>
 </tr>
 
 <tr>
   <td>5</td>
   <td><a href="">draft-elvin-md5keys-00.txt</a></td>
-  <td>SHA.1 Producer</td>
+  <td>MD5 Producer</td>
 </tr>
 
 <tr>
   <td>6</td>
   <td><a href="">draft-elvin-md5keys-00.txt</a></td>
-  <td>SHA.1 Consumer</td>
+  <td>MD5 Consumer</td>
 </tr>
 
 </table>
