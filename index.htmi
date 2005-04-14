@@ -1,10 +1,14 @@
 dnl -*- m4 -*-
 include(org.m4)
-
+define(UPDATE, $Date: 2005/04/14 08:53:38 $)
+dnl
 org_header()
 
 org_home_para(`Elvin is a system for content-based notification
 routing.')
+
+org_home_item(`Applications',`Links to Elvin <a
+href="apps.html">applications</a>, arranged alphabetically.')
 
 org_home_item(`Specifications',`The Elvin protocol <a
 href="specs/index.html">specifications</a> are in the form of an IETF

@@ -3,8 +3,8 @@ dnl
 dnl              elvin.org web
 dnl
 dnl File:        $Source: /Users/d/work/elvin/CVS/web-org/org.m4,v $
-dnl Version:     $RCSfile: org.m4,v $ $Revision: 1.2 $
-dnl Copyright:   (C) 2002-2003 webmaster@elvin.org
+dnl Version:     $RCSfile: org.m4,v $ $Revision: 1.3 $
+dnl Copyright:   (C) 2002-2005 webmaster@elvin.org
 dnl
 dnl This program is free software; you can redistribute it and/or modify
 dnl it under the terms of the GNU General Public License as published by
@@ -41,7 +41,6 @@ dnl  macros for external URLs
 dnl
 define(BREEZE_HOME,`http://www.dstc.edu.au/Research/Projects/KrowWolf/breeze.html')dnl
 define(COSNS_HOME,`http://www.dstc.edu.au/Software/CosNotification.html')dnl
-define(DARPA_HOME,`http://www.darpa.mil/ito/')dnl
 define(DSTC_HOME,`http://www.dstc.edu.au/')dnl
 define(EDDIE_HOME,`http://www.codefx.com.au/eddie/')dnl
 define(JRE_DOWNLOAD,`http://java.sun.com/products/jdk/1.1/jre/index.html')dnl
@@ -341,9 +340,9 @@ dnl
 define(org_footer, `  <tr bgcolor="org_reverse_bg">
     <td colspan="2">
       <font color="org_reverse_fg" size="-2" face="org_font_face">
-        Copyright &copy; 2002-2003&nbsp;&nbsp;&nbsp; 
+        Copyright &copy; 2002-2005&nbsp;&nbsp;&nbsp; 
 	<a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
-	 Last updated: $Date: 2003/11/07 12:32:16 $
+	 Last updated: UPDATE
       </font>
     </td>
   </tr>

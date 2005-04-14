@@ -1,0 +1,26 @@
+dnl -*- m4 -*-
+include(org.m4)
+define(UPDATE,$Date: 2005/04/14 08:53:38 $)
+dnl
+org_header()
+
+org_home_item(`ANTS', `<a href="http://ants.etse.urv.es/">ANTS</a> is
+is generic multi-user collaborative framework.')
+
+org_home_item(`EDDIE',` <a href="http://www.eddie-tool.net/">EDDIE</a>
+is a monitoring system for networked computers.  It can monitor all
+basic system properties, collects statistics and send alert
+messages.')
+
+org_home_item(`MobileBristol',`Elvin is used as part of the <a
+href="http://www.mobilebristol.com">MobileBristol</a> application
+framework for building mobile, context-aware applications.')
+
+org_home_item(`Sticker',` <a
+href="http://www.tickertape.org/projects/sticker/">Sticker</a> is a <a
+href="http://www.tickertape.org/">tickertape</a> client.  It is
+written in Java, and has been tuned for Windows, MacOSX and X systems.
+Tickertape clients can be used for personal and group IM, news reading
+and a wide range of other notification tasks.')
+
+org_footer()

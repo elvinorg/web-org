@@ -1,5 +1,7 @@
 dnl -*- m4 -*-
 include(org.m4)
+define(UPDATE,$Date: 2005/04/14 08:53:38 $)
+dnl
 org_header()
 
 org_home_item(`Mantara Software',`
