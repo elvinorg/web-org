@@ -7,7 +7,7 @@
 #
 #  add more source files here
 #
-RAW_FILES :=
+RAW_FILES := $(wildcard draft-*.txt)
 SRC_FILES := $(wildcard *.htmi)
 SUB_DIRS  := 
 TARGET    := specs
