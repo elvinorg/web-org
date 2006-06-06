@@ -30,19 +30,19 @@ specification for registration and publication.<p>
 <tr>
   <td>1</td>
   <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
-  <td>SHA.1 Dual scheme</td>
+  <td>SHA-1 Dual scheme</td>
 </tr>
 
 <tr>
   <td>2</td>
   <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
-  <td>SHA.1 Producer</td>
+  <td>SHA-1 Producer</td>
 </tr>
 
 <tr>
   <td>3</td>
   <td><a href="">draft-elvin-sha1keys-00.txt</a></td>
-  <td>SHA.1 Consumer</td>
+  <td>SHA-1 Consumer</td>
 </tr>
 
 <tr>
@@ -61,6 +61,24 @@ specification for registration and publication.<p>
   <td>6</td>
   <td><a href="">draft-elvin-md5keys-00.txt</a></td>
   <td>MD5 Consumer</td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td><a href="">draft-elvin-sha256keys-00.txt</a></td>
+  <td>SHA-256 Dual scheme</td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td><a href="">draft-elvin-sha256keys-00.txt</a></td>
+  <td>SHA-256 Producer</td>
+</tr>
+
+<tr>
+  <td>9</td>
+  <td><a href="">draft-elvin-sha256keys-00.txt</a></td>
+  <td>SHA-256 Consumer</td>
 </tr>
 
 </table>
