@@ -1,6 +1,6 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE, $Date: 2006/06/12 06:28:35 $)
+define(UPDATE, $Date: 2006/06/12 06:39:56 $)
 dnl
 org_header()
 
@@ -32,6 +32,6 @@ org_home_item(`Implementations',`Links to Elvin <a
 href="impl.html">implementations</a>, arranged by operating system and
 programming language.')
 
-org_home_item(`Publications',`Various Elvin research <a href="papers.html">papers</a>.')
+org_home_item(`Publications',`Various Elvin research <a href="papers/index.html">papers</a>.')
 
 org_footer()
