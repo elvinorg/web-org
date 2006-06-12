@@ -7,36 +7,52 @@ org_header()
 <dl>
 
 <dt><a href="auug97/auug97.html">Elvin has left the building: A
-publish/subscribe notification service with quenching</a>
+    publish/subscribe notification service with quenching</a>
 <dd>Bill Segall and David Arnold</br>
-    AUUG97<p>
+    Proceedings AUUG97, Brisbane Australia, September 1997<p>
 
 <dt><a href="apchi98/apchi98.pdf">Tickertape: Notification and
 Communication in a Single Line</a>
 <dd>Sara Parsowith, Geraldine Fitzpatrick, Simon Kaplan, Bill
-Segall<br>
+    Segall<br>
     APCHI98<p>
 
 <dt><a href="chi98/CHI98.pdf">Tickertape: Awareness in a Single
 Line</a>
 <dd>Geraldine Fitzpatrick, Sara Parsowith, Bill Segall and Simon
-Kaplan<br>
+    Kaplan<br>
     CHI98<p>
 
-<dt><a href="ecscw99/ecscw99.pdf">Augmenting the Workaday World with
-Elvin</a>
+<dt><a href="ecscw99/ecscw99.pdf">Instrumenting the Workaday World with Elvin</a>
 <dd>Geraldine Fitzpatrick, Tim Mansfield, Simon Kaplan, David Arnold,
-Ted Phelps, Bill Segall<br>ECSCW99<p>
+    Ted Phelps, Bill Segall<br>
+    Proceedings ECSCW99, Copenhagen Denmark, September 1999<p>
 
 <dt><a href="es99/es99.pdf">Discourse with Disposable Computers: How
-and Why you will talk to your tomatoes</a>
+    and Why you will talk to your tomatoes</a>
 <dd>David Arnold, Bill Segal, Julian Boot, Andy Bond, Melfyn Lloyd,
-Simon Kaplan<br>ES99<p>
+    Simon Kaplan<br>
+    Usenix Workshop on Embedded Systems (ES99), Cambridge
+    Massachusetts, March 1999<p>
 
 <dt><a href="auug2k/auug2k.pdf">Content Based Routing with Elvin4</a>
 <dd>Bill Segall, David Arnold, Julian Boot, Michael Henderson and Ted
-Phelps</br>
-    AUUG2k<p>
+    Phelps</br>
+    Proceedings AUUG2k, Canberra, Australia, June 2000<p>
+
+<dt><a href="invicom01/invicom01.pdf">Supporting Disconnectedness -
+    Transparent Information Delivery for Mobile and Invisible
+    Computing</a>
+<dd>Peter Sutton, Rhys Arkins and Bill Segall<br>
+    CCGrid 2001 IEEE International Symposium on Cluster Computing and
+    the Grid, 15-18 May 2001, Brisbane, Australia<p>
+
+<dt><a href="">Supporting public availability and accessibility with
+    Elvin: Experiences and reflections</a>
+<dd>Geraldine Fitzpatrick, Simon Kaplan, Tim Mansfield, David Arnold,
+    Bill Segall<br>
+    Computer Supported Cooperative Work, Special Issue on Awareness,
+    vol 11, pp.447-474.<p>
 
 </dl>
 </td>
