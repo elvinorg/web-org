@@ -7,7 +7,7 @@
 #
 #  add more source files here
 #
-RAW_FILES := $(wildcard *pdf)
+RAW_FILES := $(wildcard *.html) $(wildcard *.gif)
 SRC_FILES :=
 SUB_DIRS  :=
 TARGET    := papers/auug97
