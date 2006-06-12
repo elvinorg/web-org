@@ -1,19 +1,15 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE, $Date: 2005/04/14 08:53:38 $)
+define(UPDATE, $Date: 2006/06/12 06:28:35 $)
 dnl
 org_header()
 
 org_home_para(`Elvin is a system for content-based notification
 routing.')
 
-org_home_item(`Applications',`Links to Elvin <a
-href="apps.html">applications</a>, arranged alphabetically.')
-
 org_home_item(`Specifications',`The Elvin protocol <a
-href="specs/index.html">specifications</a> are in the form of an IETF
-Internet-Draft.  Various independent aspects of the protocol suite are
-independently specified.')
+href="specs/index.html">specifications</a> describe all aspects of the
+protocol suite.')
 
 org_home_item(`Registries',`Applications that use Elvin may choose to
 register their notification formats to promote interoperability.<p>
@@ -26,11 +22,16 @@ Both of these roles are catered for by a <a
 href="regs/index.html">registry</a> of allocated values and a public
 specification of their meaning.')
 
+org_home_item(`Mailing lists',`Mailing <a href="lists.html">lists</a>
+for the maintenance and revision of the Elvin specifications.')
+
+org_home_item(`Applications',`Links to Elvin <a
+href="apps.html">applications</a>, arranged alphabetically.')
+
 org_home_item(`Implementations',`Links to Elvin <a
 href="impl.html">implementations</a>, arranged by operating system and
 programming language.')
 
-org_home_item(`Mailing lists',`Mailing <a href="lists.html">lists</a>
-for the maintenance and revision of the Elvin specifications.')
+org_home_item(`Publications',`Various Elvin research <a href="papers.html">papers</a>.')
 
 org_footer()

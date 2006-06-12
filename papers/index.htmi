@@ -1,0 +1,41 @@
+dnl -*- m4 -*-
+include(org.m4)
+
+org_header()
+
+<dl>
+<dt><a href="apchi98/apchi98.pdf">Tickertape: Notification and
+Communication in a Single Line</a>
+<dd>Sara Parsowith, Geraldine Fitzpatrick, Simon Kaplan, Bill
+Segall<br>
+    APCHI98<p>
+
+<dt><a href="auug2k/auug2k.pdf">Content Based Routing with Elvin4</a>
+<dd>Bill Segall, David Arnold, Julian Boot, Michael Henderson and Ted
+Phelps</br>
+    AUUG2k<p>
+
+<dt><a href="auug97/auug97.html">Elvin has left the building: A
+publish/subscribe notification service with quenching</a>
+<dd>Bill Segall and David Arnold</br>
+    AUUG97<p>
+
+<dt><a href="chi98/CHI98.pdf">Tickertape: Awareness in a Single
+Line</a>
+<dd>Geraldine Fitzpatrick, Sara Parsowith, Bill Segall and Simon
+Kaplan<br>
+    CHI98<p>
+
+<dt><a href="ecscw99/ecscw99.pdf">Augmenting the Workaday World with
+Elvin</a>
+<dd>Geraldine Fitzpatrick, Tim Mansfield, Simon Kaplan, David Arnold,
+Ted Phelps, Bill Segall<br>ECSCW99<p>
+
+<dt><a href="es99/es99.pdf">Discourse with Disposable Computers: How
+and Why you will talk to your tomatoes</a>
+<dd>David Arnold, Bill Segal, Julian Boot, Andy Bond, Melfyn Lloyd,
+Simon Kaplan<br>ES99<p>
+
+</dl>
+
+org_footer()

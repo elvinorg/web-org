@@ -1,22 +1,22 @@
 ################################################################
 # 
 # Project:  Elvin
-# File:     $Source: /Users/d/work/elvin/CVS/web-org/Makefile,v $
+# File:     $Source: /Users/d/work/elvin/CVS/web-org/papers/apchi98/Makefile,v $
 #
 ################################################################
 #
 #  add more source files here
 #
-RAW_FILES := 
-SRC_FILES := $(wildcard *.htmi)
-SUB_DIRS  := papers regs specs cgi-bin
-TARGET    := .
+RAW_FILES := $(wildcard *pdf)
+SRC_FILES :=
+SUB_DIRS  :=
+TARGET    := papers/apchi98
 
 ################################################################
 #  anything after here shouldn't need to be changed (much!)
 ################################################################
 
-INCLUDE := .
+INCLUDE := ../..
 include $(INCLUDE)/Makefile.config
 
 $(GEN_FILES): Makefile \
