@@ -1,6 +1,6 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2005/04/14 08:53:38 $)
+define(UPDATE,$Date: 2006/11/12 23:34:50 $)
 dnl
 org_header()
 
@@ -10,9 +10,9 @@ org_home_item(`Mantara Software',`
 range of Elvin implementations for most popular operating systems and
 programming languages.')
 
-org_home_item(`tickertape.org',`
-<a href="http://www.tickertape.org">tickertape.org</a> is a community
-site that hosts development of the Tickertape protocol and
-applications which use Elvin as their network transport.')
+org_home_item(`Avis',` <a href="http://avis.sourceforge.net/">Avis</a>
+is a free software Elvin router implementation written in Java.
+Future development plans include a client-side protocol library, and
+support for optional protocol features.')
 
 org_footer()
