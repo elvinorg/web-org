@@ -1,18 +1,48 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2006/11/12 23:34:50 $)
+define(UPDATE,$Date: 2006/11/30 13:05:08 $)
 dnl
 org_header()
 
-org_home_item(`Mantara Software',`
-
-<a href="http://www.mantara.com">Mantara Software</a> provides a full
-range of Elvin implementations for most popular operating systems and
-programming languages.')
+org_home_item(`', `The following list of projects or organisations each implements some or all of the Elvin protocols.')
 
 org_home_item(`Avis',` <a href="http://avis.sourceforge.net/">Avis</a>
 is a free software Elvin router implementation written in Java.
 Future development plans include a client-side protocol library, and
 support for optional protocol features.')
+
+org_home_item(`DSTC',
+
+`The Elvin protocol was developed at the DSTC, a distributed systems
+research organisation based in Australia.  It subsequently sold the
+Elvin intellectual property to Mantara Software before shutting down
+in 2005.  DSTC previously offered no-cost Elvin downloads for
+educational or evaluation purposes.')
+
+org_home_item(`Embedded Elvin', 
+
+`An Elvin client library, written in C.  Suitable for embedded use
+using Nut/OS and Ethernut or Dynamic C and Rabbit 2000 development
+systems, or hosted use on Unix.  Derived from LEEP by <a
+href="http://innovexpo.itee.uq.edu.au/2003/exhibits/s354335/">Toby
+Smith at the University of Queensland</a>.')
+
+m4_dnl org_home_item(`erdpd',
+m4_dnl 
+m4_dnl `<a href="">erdpd</a> is an Elvin Router Discovery Protocol client for embedded Unix systems.  It monitors the ERDP traffic for a host, and maintains a simple text file containing the address details of available Elvin routers.  Developed and tested on uClinux, it should be portable to most embedded Unix-like systems.')
+m4_dnl 
+m4_dnl org_home_item(`LEEP',
+m4_dnl 
+m4_dnl `<a href="">LEEP</a> (for Library for Embedded Elvin Programs) is a
+m4_dnl small, simple, Elvin producer-only client. It is designed to be
+m4_dnl portable to a minimal ANSI C environment with support for Berkeley UDP
+m4_dnl sockets.')
+
+org_home_item(`Mantara Software',`
+
+<a href="http://www.mantara.com">Mantara Software</a> previously
+provided an Elvin router and libraries for C, COM, Macromedia
+Director, Emacs LISP, Java, .NET, PERL and Python.  Mantara
+discontinued its Elvin products in 2006.')
 
 org_footer()
