@@ -1,6 +1,6 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE, $Date: 2006/06/12 06:39:56 $)
+define(UPDATE, $Date: 2007/01/16 07:03:20 $)
 dnl
 org_header()
 
@@ -12,11 +12,13 @@ href="specs/index.html">specifications</a> describe all aspects of the
 protocol suite.')
 
 org_home_item(`Registries',`Applications that use Elvin may choose to
-register their notification formats to promote interoperability.<p>
+register their notification formats to promote interoperability.
+<br><br>
 
 In addition, several of the Elvin protocols require fields whose
 values are defined externally to the protocol specification itself, to
-allow for extension.<p>
+allow for extension.
+<br><br>
 
 Both of these roles are catered for by a <a
 href="regs/index.html">registry</a> of allocated values and a public

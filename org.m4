@@ -3,7 +3,7 @@ dnl
 dnl              elvin.org web
 dnl
 dnl File:        $Source: /Users/d/work/elvin/CVS/web-org/org.m4,v $
-dnl Version:     $RCSfile: org.m4,v $ $Revision: 1.4 $
+dnl Version:     $RCSfile: org.m4,v $ $Revision: 1.5 $
 dnl Copyright:   (C) 2002-2005 webmaster@elvin.org
 dnl
 dnl This program is free software; you can redistribute it and/or modify
@@ -318,9 +318,12 @@ define(org_font_face, `helvetica,arial')dnl
 dnl
 dnl    org_header()  --  page header
 dnl
-define(org_header, `<html>
+define(org_header, `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
   <title>elvin.org</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 </head>
 
 <body bgcolor="white">
@@ -356,9 +359,11 @@ dnl
 dnl
 define(org_home_para,`  <tr>
     <td colspan="2">
-      <font face="org_font_face">
-$1<p>
-      </font>
+      <p>
+        <font face="org_font_face">
+$1
+        </font>
+      </p>
     </td>
   </tr>
 ')dnl
@@ -368,9 +373,11 @@ dnl
 define(org_home_item,`  <tr>
     <td valign="top"><font size="+2" face="org_font_face">$1</font></td>
     <td>
-      <font face="helvetica,arial">
+      <p>
+        <font face="helvetica,arial">
 $2
-      </font>
+        </font>
+      </p>
     </td>
   </tr>
 ')dnl

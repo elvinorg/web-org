@@ -1,12 +1,13 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2005/04/14 08:53:38 $)
+define(UPDATE,$Date: 2007/01/16 07:03:20 $)
 dnl
 org_header()
 
 org_home_item(`elvin-announce',`A low-volume, moderated list for
 announcement of new specifications, registrations and implementations
-related to the Elvin protocol suite.<p>
+related to the Elvin protocol suite.
+<br><br>
 
 Links: <a href="/pipermail/elvin-announce/">archives</a>, 
 <a href="/mailman/listinfo/elvin-announce">subscribe</a>, 
@@ -14,7 +15,8 @@ Links: <a href="/pipermail/elvin-announce/">archives</a>,
 ')
 
 org_home_item(`elvin-discuss',`An un-moderated list for general
-discussion of Elvin specifications and related issues.<p>
+discussion of Elvin specifications and related issues.
+<br><br>
 
 Links: <a href="/pipermail/elvin-discuss/">archives</a>, 
 <a href="/mailman/listinfo/elvin-discuss">subscribe</a>, 
