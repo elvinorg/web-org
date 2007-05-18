@@ -1,10 +1,17 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2007/01/11 06:39:37 $)
+define(UPDATE,$Date: 2007/05/18 04:21:36 $)
 dnl
 org_header()
 
 org_home_item(`', `The following list of projects or organisations each implements some or all of the Elvin protocols.')
+
+org_home_item(`Arriva', `<a href="http://www.arrivasoftware.com/">Arriva</a>
+is an Elvin Router implementation from Arriva Software, immediately available
+for Windows and Fedora Linux.  Arriva supports the standard TCP protocol,
+lightweight notification over UDP, and features a built-in web server for
+management and statistics. Evaluation downloads are available from the Arriva
+<a href="http://www.arrivasoftware.com">website</a>.')
 
 org_home_item(`Avis',` <a href="http://avis.sourceforge.net/">Avis</a>
 is a free software Elvin router implementation written in Java.
