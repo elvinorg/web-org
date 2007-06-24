@@ -1,6 +1,6 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2007/05/18 04:21:36 $)
+define(UPDATE,$Date: 2007/06/24 15:33:23 $)
 dnl
 org_header()
 
@@ -14,9 +14,10 @@ management and statistics. Evaluation downloads are available from the Arriva
 <a href="http://www.arrivasoftware.com">website</a>.')
 
 org_home_item(`Avis',` <a href="http://avis.sourceforge.net/">Avis</a>
-is a free software Elvin router implementation written in Java.
-Future development plans include a client-side protocol library, and
-support for optional protocol features.')
+is a free software (GPL/LGPL) Elvin Router and Java SDK implementation.
+It is actively maintained and being extended to support a wide range of
+Elvin features.  Avis is available for all Java 5 platforms, including
+Windows, Mac OS X, Solaris and Linux.')
 
 org_home_item(`DSTC',
 
