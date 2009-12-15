@@ -1,8 +1,14 @@
 dnl -*- m4 -*-
 include(org.m4)
-define(UPDATE,$Date: 2006/11/12 23:34:50 $)
+define(UPDATE,$Date: 2009/12/15 05:32:01 $)
 dnl
 org_header()
+
+org_home_item(`Livespaces',
+`<a href="http://livespaces.sourceforge.net/index.html">Livespaces</a>
+is an operating system for smart meeting spaces. A Livespace is a
+Livespace-equipped room that provides a technology-supported
+collaboration space for a team of people.')
 
 org_home_item(`ANTS', `<a href="http://ants.etse.urv.es/">ANTS</a> is
 is generic multi-user collaborative framework.')
