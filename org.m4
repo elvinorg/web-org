@@ -78,7 +78,7 @@ define(LICENSE_MAILTO,`<a href="mailto:LICENSE_MAIL">ifelse($1, `', `<tt>LICENSE
 dnl
 dnl
 changecom(/*,*/)dnl
-define(m4_format,builtin(`format'))dnl
+define(m4_format,`builtin(`format')')dnl
 undefine(`format')dnl
 
 dnl ########################################################################*
@@ -277,7 +277,7 @@ define(e4_print_trailer,`
 </html>
 ')dnl
 dnl
-dnl    e4_example ( code segment, etc ) 
+dnl    e4_example ( code segment, etc )
 dnl
 define(e4_example, `
 <table width="100%" cellpadding="3"><tr><td bgcolor="EEEEEE">
@@ -288,7 +288,7 @@ define(e4_example, `
 <p>
 ')dnl
 dnl
-dnl    e4_wide_example ( code segment, etc ) 
+dnl    e4_wide_example ( code segment, etc )
 dnl
 define(e4_wide_example, `
 <table width="100%" cellpadding="3"><tr><td bgcolor="EEEEEE">
@@ -343,7 +343,7 @@ dnl
 define(org_footer, `  <tr bgcolor="org_reverse_bg">
     <td colspan="2">
       <font color="org_reverse_fg" size="-2" face="org_font_face">
-        Copyright &copy; 2002-2007&nbsp;&nbsp;&nbsp; 
+        Copyright &copy; 2002-2007&nbsp;&nbsp;&nbsp;
 	<a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
 	 Last updated: UPDATE
       </font>
