@@ -8,7 +8,7 @@ org_header()
 The Elvin protocol suite consists of multiple, semi-independent
 protocols.  Each protocol unit is specified using the <a
 href="http://www.ietf.org">IETF</a>'s <a
-href="http://www.ietf.org/ID.html">Internet-Draft</a> format and
+href="http://www.ietf.org/id-info/">Internet-Draft</a> format and
 language, under the rules specified in <a
 href="http://www.ietf.org/rfc/rfc2026.txt">RFC-2026</a>.  It is our
 intention to publish these specifications as Informational RFCs once
