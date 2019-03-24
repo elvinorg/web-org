@@ -4,7 +4,7 @@ dnl              elvin.org web
 dnl
 dnl File:        $Source: /Users/d/work/elvin/CVS/web-org/org.m4,v $
 dnl Version:     $RCSfile: org.m4,v $ $Revision: 1.5 $
-dnl Copyright:   (C) 2002-2005 webmaster@elvin.org
+dnl Copyright:   (C) 2002-2019 webmaster@elvin.org
 dnl
 dnl This program is free software; you can redistribute it and/or modify
 dnl it under the terms of the GNU General Public License as published by
@@ -260,7 +260,7 @@ href="mailto:elvin-licensing@dstc.edu.au">elvin-licensing@dstc.edu.au</a>
 dnl
 dnl
 define(e4_print_header,`
-<!-- Copyright (C) elvin.org 1997-2002 -->
+<!-- Copyright (C) elvin.org 1997-2019 -->
 
 <html>
  <head>
@@ -343,7 +343,7 @@ dnl
 define(org_footer, `  <tr bgcolor="org_reverse_bg">
     <td colspan="2">
       <font color="org_reverse_fg" size="-2" face="org_font_face">
-        Copyright &copy; 2002-2007&nbsp;&nbsp;&nbsp;
+        Copyright &copy; 2002-2019&nbsp;&nbsp;&nbsp;
 	<a href="mailto:webmaster@elvin.org">webmaster@elvin.org</a>&nbsp;&nbsp;&nbsp;
 	 Last updated: UPDATE
       </font>
